@@ -1,0 +1,349 @@
+:root {
+    --primary : rgb(57, 57, 247);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+}
+
+.btn-primary {
+    background-color: rgb(57, 57, 247) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.header {
+    font-size: 3.5rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+.shrink {
+    padding-top: 0;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: black;
+
+}
+
+.bg-hellokoding,
+.alert {
+    background: #488bff;
+    color: white;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 9999999999;
+    background-color: rgb(255, 255, 255);
+}
+
+.preloader .loading {
+    position: absolute;
+    top: 50%;
+    width: 100vw !important;
+    bottom: 50%;
+}
+
+
+.employee{
+    transform: translateY(-10%);
+}
+/* Animasi Kilau */
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+ .team, .title {
+    color: #86b1fb;
+}
+.partner{
+    color: var(--primary);
+}
+#contact,
+.text-footer,
+.address-text,
+.credit,
+.footer-sub,
+.bi {
+    color: #ffffff;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+}
+
+.swiperFull {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: translateY(20% );
+}
+
+
+.swiper-slide.slide2 img {
+    height: 100%;
+
+    filter: grayscale(100%);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    filter: grayscale(0%);
+
+    cursor: pointer;
+}
+
+.swiper-slide img:hover {
+    filter: grayscale(0%);
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hellokoding-container,
+.container#team,
+.container-fluid #about {
+    overflow: hidden;
+}
+
+#team img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#team img:hover {
+    filter: grayscale(0%);
+}
+
+#about h2,
+.title-text,
+.F-about {
+    font-weight: 700;
+}
+
+#about p,
+.hellokoding-text {
+    font-weight: 300;
+    text-align: left;
+}
+
+.text-about {
+    margin: 0;
+    padding: 0;
+}
+
+.hellokoding-text {
+    font-size: 20px;
+}
+
+
+.fas{
+    color: #488bff;
+}
+
+.modal-content {
+    padding: 30px;
+    font-weight: normal;
+}
+
+.button-hellokoding,
+.button-hellokoding:hover {
+    border-color: #488bff;
+    color: #488bff;
+}
+
+.button-hellokoding:hover {
+    background-color: #488bff;
+    color: #ffff;
+}
+
+h2.text-footer {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 140%;
+}
+
+img.brand-footer {
+    width: 70%;
+    height: auto;
+}
+
+i {
+    font-size: 22px;
+}
+
+.webinar-container {
+    min-height: 70vh;
+}
+
+.webinar-title {
+    width: 50%;
+}
+
+.webinar-img {
+    position: absolute; 
+    left: 45%;
+}
+
+.news-container {
+
+}
+.news-title {
+    width: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+ 
+    #banner {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: black;
+    }
+    h2.text-footer {
+        font-size: 1.7em;
+    }
+    .navbar-brand img {
+        height: 22px;
+        width: auto;
+        background: rgba(255, 255, 255, 0.564);
+
+    }
+
+    .header {
+        font-size: 32px;
+        margin: 0 !important
+        ;
+    }
+    .sub-header {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .webinar-container {
+        min-height: 0vh;
+        display: block !important;
+    }
+    
+    .webinar-title {
+        width: 100%;
+    }
+    
+    .webinar-img {
+        position: relative; 
+        left: 0%;
+        width: 100%;
+    }
+
+    .img-team {
+        display: none;
+    }
+
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .hellokoding-header {
+        font-size: 50px;
+    }
+    h2.text-footer {
+        font-size: 2.2em;
+    }
+    .navbar-brand img {
+        height: 22px;
+        width: auto;
+    }
+
+    
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .hellokoding-header {
+        font-size: 50px;
+    }
+    h2.text-footer {
+        font-size: 2.4em;
+    }
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+  
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .hellokoding-header {
+        font-size: 50px;
+    }
+    h2.text-footer {
+        font-size: 2.5em;
+    }
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .hellokoding-header {
+        font-size: 50px;
+    }
+    h2.text-footer {
+        color: #ffffff;
+        font-size: 3em;
+        line-height: 130%;
+    }
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+}
